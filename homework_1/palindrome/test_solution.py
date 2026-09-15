@@ -10,7 +10,7 @@ def test_single_digit_always_palindrome(number):
 # Граничный - самый "маленький" вариант
 @pytest.mark.parametrize("number", [-121, -7, -1000])
 def test_negative_always_palindrome(number):
-    assert is_palindrome(number) is True
+    assert is_palindrome(number) is False
 
 # Числа с нулями - ни одно положительное число, оканчивающееся на 0, не является палиндромом
 @pytest.mark.parametrize("number", [10, 100, 1000, 20, 350])
